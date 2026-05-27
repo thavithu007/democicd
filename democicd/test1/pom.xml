@@ -84,7 +84,7 @@
         <version>3.5.5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>TestSuite/purchase.xml</suiteXmlFile>
+            <suiteXmlFile>TestSuite/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
