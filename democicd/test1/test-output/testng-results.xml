@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-13T17:15:14 IST" name="Default suite" finished-at="2026-05-13T17:15:23 IST" duration-ms="8950">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7d20d0b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-05-13T17:15:14 IST" name="Default test" finished-at="2026-05-13T17:15:23 IST" duration-ms="8950">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@7d20d0b]" started-at="2026-05-13T17:15:14 IST" name="setUpClass" finished-at="2026-05-13T17:15:15 IST" duration-ms="582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@16a49a5d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7d20d0b]" started-at="2026-05-13T17:15:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-13T17:15:23 IST" duration-ms="8166" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Purchase the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Error Validations"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Verify "Incorrect email or password." error message is displayed.' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("Verify {string} error message is displayed.")
+public void verify_error_message_is_displayed(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Verify "Incorrect email or password." error message is displayed.' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("Verify {string} error message is displayed.")
+public void verify_error_message_is_displayed(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.Verify "Incorrect email or password." error message is displayed.(file:///C:/Users/Vijayalakshmi/eclipse-workspace/testng1/src/test/java/cucumber/ErrorValidations.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@7d20d0b]" started-at="2026-05-13T17:15:23 IST" name="tearDownClass" finished-at="2026-05-13T17:15:23 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
